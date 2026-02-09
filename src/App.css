@@ -1,0 +1,127 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+todo-input-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+todo-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+todo-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.add-button {
+  padding: 12px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.add-button:hover {
+  background: #764ba2;
+}
+
+todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  border-left: 4px solid #667eea;
+  transition: all 0.3s;
+}
+
+todo-item:hover {
+  background: #f0f0f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+todo-item.completed {
+  opacity: 0.6;
+  background: #e8f5e9;
+}
+
+todo-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+todo-text {
+  flex: 1;
+  font-size: 1em;
+  color: #333;
+}
+
+todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+delete-button {
+  padding: 8px 12px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background 0.3s;
+}
+
+delete-button:hover {
+  background: #ff5252;
+}
